@@ -1,0 +1,25 @@
+.header {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  color: rgb(var(--foreground-rgb));
+}
+#title {
+  font-weight: inherit;
+  border-bottom: 2px solid rgb(var(--foreground-rgb));
+  padding-bottom: 5px;
+}
+
+.main {
+  width: clamp(60%, 80%, 90%);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 15px;
+}

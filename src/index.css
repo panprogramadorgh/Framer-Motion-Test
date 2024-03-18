@@ -1,0 +1,42 @@
+:root {
+  --font-family: Inter, Arial, sans-serif;
+  --font-family-mono: "Cascaida code", JetBrainsMono, Consolas;
+
+  --foreground-rgb: 40, 40, 40;
+  --background-rgb-start: 240, 240, 240;
+  --background-rgb-end: 210, 210, 210;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    rgb(var(--background-rgb-start)),
+    rgb(var(--background-rgb-end))
+  );
+  font-family: var(--font-family);
+}
+
+#root {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: transparent;
+  outline: 2px solid rgb(var(--foreground-rgb));
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: rgb(var(--foreground-rgb));
+  color: rgb(var(--background-rgb-start));
+}
